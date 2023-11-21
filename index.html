@@ -12,7 +12,7 @@
 
     <div id="app">
         <ul>
-            <li v-for="email in mails">{{email}}</li>
+            <li v-show="mails.length === numberOfEmail" v-for="email in mails">{{email}}</li>
         </ul>
     </div>
 
